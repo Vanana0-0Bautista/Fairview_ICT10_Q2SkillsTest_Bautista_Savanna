@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Skills Test</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+
+    <style>
+
+      body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dbeafe, #e9d5ff);
+            
+        }
+
+        .container {
+            background-color: white;
+            width: 400px;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(70, 60, 120, 0.15);
+            text-align: center;
+        }
+
+        h1 {
+            color: #59438b;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 90%;
+            padding: 13px;
+            border: 2px solid #d8c9f0;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        input:focus {
+            border-color: #9473c9;
+        }
+
+        button {
+            background-color: #8064b5;
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #62458f;
+        }
+
+        .result {
+            background-color: #f5f0ff;
+            margin-top: 25px;
+            padding: 18px;
+            border-radius: 12px;
+            text-align: left;
+        }
+
+        h3 {
+            color: #59438b;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .result p {
+            color: #555;
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        .result span {
+            color: #8064b5;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .footer {
+            color: #999;
+            font-size: 11px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Non-Metal Information</h1>
+        
+        <p>Enter an element to check if it is a non-metal:</p>
+        <input type="text" id="nonmetal1" placeholder="Enter an element">
+        <br><br>
+        <button py-click="search_element" id="checkButton">Check</button>
+        <br>
+        
+    </div class="result">
+    <h3>Showcase Result:</h3>
+    <p><b>Non-element Code:</b><span id="code"></span></p>
+    <p><b>Non-element Name:</b><span id="name"></span></p>
+    <p><b>Order from the Non-element:</b><span id="order"></span></p> 
+    <p><b>Number of Non-element:</b><span id="count"></span></p>
+    
+    <script type="py" src="main.py"></script>
+    
+</body>
+</html>

@@ -9,98 +9,129 @@
     <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
 
     <style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #faf7f2;
+    color: #ad9090;
+    margin: 0;
+    padding: 30px 20px;
+}
 
-      body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #dbeafe, #e9d5ff);
-            
-        }
+/* Main Container */
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(90, 65, 40, 0.08);
+    max-width: 650px;
+    margin: 20px auto;
+    text-align: center;
+    border: 0px solid #eee4d8;
+}
 
-        .container {
-            background-color: white;
-            width: 400px;
-            padding: 35px;
-            border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(70, 60, 120, 0.15);
-            text-align: center;
-        }
+/* Main Heading */
+h1 {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 45px;
+    color: #b37789;
+    margin-bottom: 14px;
+}
 
-        h1 {
-            color: #59438b;
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
+/* Paragraphs */
+p {
+    text-align: center;
+    font-size: 17px;
+    color: #804b5b;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
 
-        .subtitle {
-            color: #777;
-            font-size: 14px;
-            margin-bottom: 25px;
-        }
+/* Input Field */
+input[type="text"],
+input[type="number"] {
+    padding: 12px 15px;
+    border: 1px solid #d8cbb8;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 75%;
+    outline: none;
+    transition: 0.3s;
+    background-color: #fdfbf8;
+}
 
-        input {
-            width: 90%;
-            padding: 13px;
-            border: 2px solid #d8c9f0;
-            border-radius: 10px;
-            outline: none;
-            font-size: 15px;
-        }
+input:focus {
+    border-color: #9b7958;
+    box-shadow: 0 0 5px rgba(122, 92, 62, 0.2);
+}
 
-        input:focus {
-            border-color: #9473c9;
-        }
+/* Button */
+button {
+    background-color: #be808f;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
 
-        button {
-            background-color: #8064b5;
-            color: white;
-            border: none;
-            padding: 12px 35px;
-            border-radius: 10px;
-            font-size: 15px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
 
-        button:hover {
-            background-color: #62458f;
-        }
+/* Showcase Result Heading */
+body > h1 {
+    background-color: #b67281;
+    color: #ffffff;
+    font-size: 35px;
+    padding: 18px;
+    max-width: 650px;
+    margin: 30px auto 0;
+    border-radius: 12px 12px 0 0;
+}
 
-        .result {
-            background-color: #f5f0ff;
-            margin-top: 25px;
-            padding: 18px;
-            border-radius: 12px;
-            text-align: left;
-        }
+/* Showcase Result Information */
+body > p {
+    background-color: #ffffff;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 15px 25px;
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 1px solid #eee4d8;
+    box-sizing: border-box;
+}
 
-        h3 {
-            color: #59438b;
-            text-align: center;
-            margin-top: 0;
-        }
+/* Result Values */
+body > p span {
+    color: #b4748e;
+    font-weight: 600;
+    margin-left: 5px;
+}
 
-        .result p {
-            color: #555;
-            font-size: 14px;
-            padding: 5px;
-        }
+/* Last Result Row */
+body > p:nth-of-type(4) {
+    border-radius: 0 0 12px 12px;
+    padding-bottom: 22px;
+}
 
-        .result span {
-            color: #8064b5;
-            font-weight: bold;
-            margin-left: 5px;
-        }
-
-        .footer {
-            color: #999;
-            font-size: 11px;
-            margin-top: 20px;
-        }
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #824a63;
+    margin-top: 45px;
+    border-top: 1px solid #d8cbb8;
+    padding-top: 15px;
+}
 
     </style>
 </head>
 <body>
-
+ 
     <div class="container">
         <h1>Non-Metal Information</h1>
         
@@ -111,7 +142,7 @@
         <br>
         
     </div class="result">
-    <h3>Showcase Result:</h3>
+    <h1>Showcase Result:</h1>
     <p><b>Non-element Code:</b><span id="code"></span></p>
     <p><b>Non-element Name:</b><span id="name"></span></p>
     <p><b>Order from the Non-element:</b><span id="order"></span></p> 
